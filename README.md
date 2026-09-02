@@ -49,7 +49,15 @@ Methods for rationale).
 | `_FoldChange_*` | Fold-change values relative to CTRL |
 | `_Correlation_Matrix_*` / `_PValue_Matrix_*` / `_N_Matrix_*` | Pearson correlation coefficient, p-value, and sample-size (N) matrices from `Hmisc::rcorr()`, exported separately per the analysis convention used throughout this study |
 | `_Pairwise_Correlations_*` | The same correlation results in long (one row per gene pair) format |
-| `.r` | R analysis script that generated the accompanying CSV(s) and the corresponding manuscript figure panel |
+| `.r` | R analysis script that generated the accompanying CSV(s), image(s), and the corresponding manuscript figure panel |
+| `.png` / `.svg` | Rendered figure panel (raster / vector) produced by the accompanying `.r` script |
+
+## Running the scripts
+
+Each `.r` script expects to be run with its own folder as the working directory (open it in
+RStudio and use *Session > Set Working Directory > To Source File Location*, or run
+`setwd()` yourself before sourcing). All file paths inside each script are relative to that
+folder — no personal or machine-specific paths are used in this repository.
 
 ## Gene abbreviations
 

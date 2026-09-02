@@ -7,7 +7,8 @@
 rm(list = ls())
 
 # Set working directory
-setwd("C:/Users/saran/OneDrive/VSCBIC/05-Lab members/Ruby/IL10/Paper submission/Figures/Fig5/Ver2")
+# Set the working directory to this script's own folder before running
+# (e.g. in RStudio: Session > Set Working Directory > To Source File Location)
 
 # ==============================================================================
 # LOAD REQUIRED LIBRARIES

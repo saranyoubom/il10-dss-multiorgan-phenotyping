@@ -64,7 +64,8 @@
 
 # 0) Clear workspace and set working directory
 rm(list = ls())
-setwd("C:/Users/saran/OneDrive/VSCBIC/05-Lab members/Ruby/IL10/Paper submission/Figures/Supplementary")
+# Set the working directory to this script's own folder before running
+# (e.g. in RStudio: Session > Set Working Directory > To Source File Location)
 
 # 1) Load required libraries
 required_packages <- c("ggplot2", "dplyr", "readr", "tidyr", "ggpubr", "rstatix")
