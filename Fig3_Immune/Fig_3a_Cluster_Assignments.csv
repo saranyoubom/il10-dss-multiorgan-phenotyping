@@ -1,0 +1,41 @@
+"Cytokines","Cluster_Number","Cluster_Label","Order"
+"IL-1alpha",3,"Strongly upregulated",1
+"sTNF RII",3,"Strongly upregulated",2
+"IFNgamma",3,"Strongly upregulated",3
+"GCSF",3,"Strongly upregulated",4
+"sTNF RI",3,"Strongly upregulated",5
+"Fas Ligand",3,"Strongly upregulated",6
+"MIP-1gamma",3,"Strongly upregulated",7
+"MIG",2,"Persistently down",8
+"GM-CSF",2,"Persistently down",9
+"IL-2",2,"Persistently down",10
+"IL-13",2,"Persistently down",11
+"IL-6",1,"DSS-normalised",12
+"Leptin",1,"DSS-normalised",13
+"TIMP-2",1,"DSS-normalised",14
+"Eotaxin-2",1,"DSS-normalised",15
+"TIMP-1",1,"DSS-normalised",16
+"BLC",1,"DSS-normalised",17
+"MIP-1alpha",1,"DSS-normalised",18
+"LIX",4,"Mild/unchanged",19
+"IL-12, p40/p70",4,"Mild/unchanged",20
+"KC",4,"Mild/unchanged",21
+"I-TAC",4,"Mild/unchanged",22
+"IL-4",4,"Mild/unchanged",23
+"Lymphotacin",4,"Mild/unchanged",24
+"MCP-1",4,"Mild/unchanged",25
+"IL-17",4,"Mild/unchanged",26
+"IL-12, p70",4,"Mild/unchanged",27
+"RANTES",4,"Mild/unchanged",28
+"IL-7",4,"Mild/unchanged",29
+"IL-1beta",4,"Mild/unchanged",30
+"TCA-3",4,"Mild/unchanged",31
+"CD30L",4,"Mild/unchanged",32
+"Fractalkine",4,"Mild/unchanged",33
+"SDF-1",4,"Mild/unchanged",34
+"IL-9",4,"Mild/unchanged",35
+"Eotaxin",4,"Mild/unchanged",36
+"IL-10",4,"Mild/unchanged",37
+"MCSF",4,"Mild/unchanged",38
+"TECK",4,"Mild/unchanged",39
+"TNF-alpha",4,"Mild/unchanged",40

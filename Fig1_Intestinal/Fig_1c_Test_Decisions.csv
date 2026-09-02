@@ -1,0 +1,7 @@
+"Group","Comparison","Week1","Week2","Test_Selected","Test_Type"
+"CTRL","Week 0 vs 12","0","12","t.test","Unpaired"
+"IL10-KO","Week 0 vs 12","0","12","t.test","Unpaired"
+"DSS-IL10-KO","Week 0 vs 1","0","1","t.test","Unpaired"
+"DSS-IL10-KO","Week 0 vs 7","0","7","t.test","Unpaired"
+"DSS-IL10-KO","Week 0 vs 12","0","12","t.test","Unpaired"
+"DSS-IL10-KO","Week 7 vs 12","7","12","t.test","Unpaired"

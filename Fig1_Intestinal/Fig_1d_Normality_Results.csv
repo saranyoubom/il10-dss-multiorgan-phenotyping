@@ -1,0 +1,4 @@
+"Group","n","Shapiro_W","Shapiro_p","Normal","Test_Used"
+"CTRL",3,0.9826,0.747,TRUE,"Unpaired t-test (uniform across panel)"
+"IL10-KO",3,0.9854,0.7687,TRUE,"Unpaired t-test (uniform across panel)"
+"DSS-IL10-KO",3,0.8835,0.3348,TRUE,"Unpaired t-test (uniform across panel)"

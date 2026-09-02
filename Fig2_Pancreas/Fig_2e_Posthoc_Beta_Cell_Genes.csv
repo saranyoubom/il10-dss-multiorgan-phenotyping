@@ -1,0 +1,8 @@
+"Gene","group1","group2","n1","n2","statistic","Test_Method","p","p_adj_method","p.adj","p.adj.signif"
+"Ins1","CTRL","DSS-IL10-KO",3,3,2,"Wilcoxon rank-sum",0.4,"Benjamini-Hochberg",0.4,"ns"
+"Ins2","CTRL","IL10-KO",4,4,16,"Wilcoxon rank-sum",0.029,"Benjamini-Hochberg",0.029,"*"
+"Ins2","CTRL","DSS-IL10-KO",4,4,0,"Wilcoxon rank-sum",0.029,"Benjamini-Hochberg",0.029,"*"
+"Ins2","IL10-KO","DSS-IL10-KO",4,4,0,"Wilcoxon rank-sum",0.029,"Benjamini-Hochberg",0.029,"*"
+"Mafa","CTRL","IL10-KO",4,4,9,"Wilcoxon rank-sum",0.886,"Benjamini-Hochberg",0.886,"ns"
+"Mafa","CTRL","DSS-IL10-KO",4,4,9,"Wilcoxon rank-sum",0.886,"Benjamini-Hochberg",0.886,"ns"
+"Mafa","IL10-KO","DSS-IL10-KO",4,4,9,"Wilcoxon rank-sum",0.886,"Benjamini-Hochberg",0.886,"ns"

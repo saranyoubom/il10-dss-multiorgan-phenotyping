@@ -1,0 +1,4 @@
+"Group","n","Mean_Delta_0_1","SD_Delta_0_1","SEM_Delta_0_1","Mean_PercentChange_0_1","Mean_Delta_6_7","SD_Delta_6_7","SEM_Delta_6_7","Mean_PercentChange_6_7"
+"CTRL",5,1.1,0.38,0.17,4.88,0.61,0.19,0.09,2.33
+"IL10-KO",5,-2.69,0.98,0.44,-9.59,-0.18,0.46,0.2,-0.63
+"DSS-IL10-KO",5,-3.39,1.16,0.52,-11.67,-1.45,0.44,0.2,-5.34

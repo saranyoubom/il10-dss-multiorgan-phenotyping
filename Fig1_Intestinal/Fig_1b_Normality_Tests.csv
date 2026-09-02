@@ -1,0 +1,7 @@
+"Group","Comparison","n","Shapiro_W","Shapiro_p","Normal","Test_Used"
+"CTRL","Week 0 vs 1",5,0.8911,0.3627,TRUE,"Paired t-test (uniform across panel)"
+"CTRL","Week 6 vs 7",5,0.948,0.723,TRUE,"Paired t-test (uniform across panel)"
+"IL10-KO","Week 0 vs 1",5,0.6185,0.0011,FALSE,"Paired t-test (uniform across panel)"
+"IL10-KO","Week 6 vs 7",5,0.9795,0.9319,TRUE,"Paired t-test (uniform across panel)"
+"DSS-IL10-KO","Week 0 vs 1",5,0.9189,0.5229,TRUE,"Paired t-test (uniform across panel)"
+"DSS-IL10-KO","Week 6 vs 7",5,0.9748,0.9048,TRUE,"Paired t-test (uniform across panel)"

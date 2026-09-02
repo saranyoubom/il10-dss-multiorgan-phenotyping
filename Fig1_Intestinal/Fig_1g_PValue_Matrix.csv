@@ -1,0 +1,6 @@
+"Gene","Mafa","Glp1r","Insr","Zfand6","Tcf19"
+"Mafa",NA,0.0012,6e-04,0,0.0076
+"Glp1r",0.0012,NA,0,0,0
+"Insr",6e-04,0,NA,1e-04,0
+"Zfand6",0,0,1e-04,NA,2e-04
+"Tcf19",0.0076,0,0,2e-04,NA

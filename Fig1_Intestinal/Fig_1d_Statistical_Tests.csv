@@ -1,0 +1,4 @@
+"Variable","group1","group2","Test_Method","p","p.signif"
+"AG_Ratio","CTRL","IL10-KO","unpaired t-test",0.193,"ns"
+"AG_Ratio","CTRL","DSS-IL10-KO","unpaired t-test",0.00334,"**"
+"AG_Ratio","IL10-KO","DSS-IL10-KO","unpaired t-test",0.084,"ns"

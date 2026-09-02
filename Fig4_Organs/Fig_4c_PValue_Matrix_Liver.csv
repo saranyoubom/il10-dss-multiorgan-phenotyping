@@ -1,0 +1,6 @@
+"Gene","Tbc1d4","Glut1","Zfand6","Tcf19","Ghrhr"
+"Tbc1d4",NA,0,0,0,1e-04
+"Glut1",0,NA,0,0,0
+"Zfand6",0,0,NA,0,2e-04
+"Tcf19",0,0,0,NA,0
+"Ghrhr",1e-04,0,2e-04,0,NA

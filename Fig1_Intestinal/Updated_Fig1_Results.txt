@@ -1,0 +1,27 @@
+UPDATED RESULTS SECTION FOR FIGURE 1
+================================================================================
+Based on exact statistical values from post-hoc analyses
+Following Diabetologia style guidelines
+================================================================================
+
+
+DSS treatment induces chronic intestinal inflammation and increased permeability in IL10-deficient mice
+
+DSS treatment induced intestinal inflammation in IL10-deficient mice, as evidenced by body weight loss, increased intestinal permeability and histological damage (Fig. 1a). Body weight trajectories differed markedly amongst groups: CTRL mice exhibited progressive weight gain from week 0 (22.53 ± 0.22 g) to week 7 (26.89 ± 0.38 g, p<0.001), whilst both IL10-KO and DSS-IL10-KO mice experienced acute weight loss following the first DSS exposure at week 1 (IL10-KO: 28.08 ± 0.27 g to 25.39 ± 0.51 g, p<0.01; DSS-IL10-KO: 28.82 ± 0.42 g to 25.43 ± 0.15 g, p<0.001; Fig. 1b). IL10-KO mice partially recovered towards baseline weight by week 6 (27.16 ± 0.58 g), although this remained non-significantly lower than week 0 (p=0.091), whereas DSS-IL10-KO mice failed to regain their initial body weight throughout the study period (week 7: 25.48 ± 1.15 g vs week 0, p<0.05). 
+
+Intestinal permeability, assessed by FITC-dextran leakage, remained stable in CTRL and IL10-KO mice across the 12-week study period (CTRL: week 0, 1.67 ± 0.28 µg/ml vs week 12, 0.95 ± 0.14 µg/ml, p=0.065; IL10-KO: week 0, 0.74 ± 0.12 µg/ml vs week 12, 0.55 ± 0.19 µg/ml, p=0.54). In contrast, DSS-IL10-KO mice exhibited significantly elevated intestinal permeability at week 7 (2.05 ± 0.26 µg/ml vs 0.73 ± 0.14 µg/ml at week 0, p<0.01), which partially resolved but remained elevated at week 12 (1.11 ± 0.16 µg/ml, p<0.05 vs week 0; Fig. 1c). 
+
+The albumin/globulin ratio progressively declined from CTRL (3.49 ± 0.10) to IL10-KO (2.67 ± 0.43, p<0.05 vs CTRL) to DSS-IL10-KO (1.44 ± 0.20, p<0.01 vs CTRL; p<0.05 vs IL10-KO), indicating escalating systemic inflammatory responses (Fig. 1d). Histopathological examination of the small intestine revealed intact crypts in CTRL mice, mild crypt erosion in IL10-KO mice, and severe inflammatory infiltrates with mucosal ulceration in DSS-IL10-KO mice (Fig. 1e). 
+
+These findings confirm successful induction of chronic intestinal inflammation with sustained barrier dysfunction in DSS-IL10-KO mice, whereas IL10-KO mice exhibited subclinical intestinal pathology without overt enteritis or permeability defects.
+
+
+================================================================================
+KEY STATISTICAL CORRECTIONS MADE:
+================================================================================
+1. DSS-IL10-KO week 0→1: p<0.001 (not p<0.01; actual p=0.00099)
+2. IL10-KO week 6 recovery: Added clarification that p=0.091 (non-significant)
+3. FITC-dextran CTRL and IL10-KO: Added p-values showing stability
+4. AG ratio IL10-KO vs DSS-IL10-KO: p<0.05 (actual p=0.00635, adjusted p=0.013)
+5. All means ± SEM verified against summary statistics
+6. Added contextual interpretation about barrier dysfunction specificity

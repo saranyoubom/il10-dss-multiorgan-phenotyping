@@ -1,0 +1,4 @@
+"Group","n","mean_log2","median_log2","sd_log2","min_log2","max_log2","n_higher_1.5fold","n_lower_1.5fold"
+"CTRL",40,0,0,0,0,0,0,0
+"IL10-KO",40,0.071,0.113,0.683,-2.2,1.56,8,4
+"DSS-IL10-KO",40,0.242,0.121,0.899,-1.71,2.17,10,5

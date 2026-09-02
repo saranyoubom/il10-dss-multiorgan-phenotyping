@@ -1,0 +1,7 @@
+"Group","Variable","group1","group2","Test_Method","p","p.signif"
+"CTRL","FITC_Conc","0","12","unpaired t-test",0.0652,"ns"
+"IL10-KO","FITC_Conc","0","12","unpaired t-test",0.44,"ns"
+"DSS-IL10-KO","FITC_Conc","0","1","unpaired t-test",0.164,"ns"
+"DSS-IL10-KO","FITC_Conc","0","7","unpaired t-test",0.00397,"**"
+"DSS-IL10-KO","FITC_Conc","0","12","unpaired t-test",0.112,"ns"
+"DSS-IL10-KO","FITC_Conc","7","12","unpaired t-test",0.0195,"*"

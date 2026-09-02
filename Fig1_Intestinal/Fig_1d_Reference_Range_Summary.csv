@@ -1,0 +1,4 @@
+"Group","n","n_below_ref","n_within_ref","n_above_ref","pct_within_ref"
+"CTRL",3,0,0,3,0
+"IL10-KO",3,0,1,2,33.3
+"DSS-IL10-KO",3,1,2,0,66.7

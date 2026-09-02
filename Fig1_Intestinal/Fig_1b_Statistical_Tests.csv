@@ -1,0 +1,7 @@
+"Group","Variable","group1","group2","Test_Method","p","p.signif"
+"CTRL","BW","0","1","paired t-test",0.00306,"**"
+"CTRL","BW","6","7","paired t-test",0.00209,"**"
+"IL10-KO","BW","0","1","paired t-test",0.00356,"**"
+"IL10-KO","BW","6","7","paired t-test",0.438,"ns"
+"DSS-IL10-KO","BW","0","1","paired t-test",0.00288,"**"
+"DSS-IL10-KO","BW","6","7","paired t-test",0.00184,"**"
