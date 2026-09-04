@@ -23,6 +23,7 @@ Methods for rationale).
 | `Fig4_Organs/` | Hepatic and renal RT-qPCR gene expression, liver and kidney gene-pair correlation matrices |
 | `Fig5_InterOrgan/` | Inter-organ (cross-tissue) gene-pair correlation analysis, see note below |
 | `Supplementary/` | Blood chemistry validation detail (Supplementary Fig. 1) |
+| `Supplementary_Tables/` | R scripts and outputs for Supplementary Tables S3-S5, added during peer review; see note below |
 
 ## Fig5_InterOrgan: two related analyses
 
@@ -37,6 +38,31 @@ Methods for rationale).
   adding Benjamini–Hochberg correction across all tests and a within-group-stratified
   correlation pass. Produced during peer review in response to reviewer comments on multiple
   testing and pooled-vs-within-group correlation structure; reported in Supplementary Table S3.
+
+## Supplementary_Tables: reviewer-requested reanalyses (S3-S5)
+
+Three analyses added in response to peer review, each producing one of Supplementary
+Tables S3-S5 reported in the manuscript:
+
+- `Supplementary_Table_S3_InterOrgan_Correlations.R`: Benjamini-Hochberg correction and
+  group-stratified reanalysis of the inter-organ correlations in `Fig5_InterOrgan/`.
+  Writes its output back into `Fig5_InterOrgan/` (the `Rebuttal_*.csv` files described
+  above) to match where the source data lives.
+- `Supplementary_Table_S4_Mixed_Effects_Models.R`: linear mixed-effects models (random
+  intercept per animal) for body weight, fasting C-peptide and fasting blood glucose,
+  complementing the paired t-tests reported in the main text.
+- `Supplementary_Table_S5_Effect_Sizes_Power.R`: Cohen's d and post-hoc statistical power
+  for representative group comparisons, plus the minimum effect size detectable at 80%
+  power given this study's sample sizes.
+
+These three scripts were written directly in R to match the rest of this deposit, but
+could not be executed or verified on the machine that produced them (R/Rscript was not
+available there; the original reanalysis was run in Python and the R port was checked by
+hand against those results). Please run them once and confirm the output before treating
+the CSVs as final. S4 in particular reconstructs, by exhaustive search against this
+project's own summary-statistics CSVs, which 5 of the available animals per group make up
+the cohort reported throughout the manuscript; this cohort identification should be
+independently confirmed against original laboratory records.
 
 ## File naming conventions
 
