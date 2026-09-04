@@ -5,9 +5,9 @@ Data and analysis code supporting the manuscript submitted to *Scientific Report
 
 ## Study groups
 
-- **CTRL** — C57BL/6J background control mice
-- **IL10-KO** — untreated IL-10-knockout mice (B6.129P2-Il10tm1Cgn)
-- **DSS-IL10-KO** — IL-10-knockout mice receiving recurrent DSS treatment (2 cycles, weeks 0 and 6, with a 5-week remitting interval)
+- **CTRL**: C57BL/6J background control mice
+- **IL10-KO**: untreated IL-10-knockout mice (B6.129P2-Il10tm1Cgn)
+- **DSS-IL10-KO**: IL-10-knockout mice receiving recurrent DSS treatment (2 cycles, weeks 0 and 6, with a 5-week remitting interval)
 
 n = 5 animals per group for whole-animal physiological endpoints; n = 4 per group for RT-qPCR
 gene expression (after exclusion of amplification-QC failures). Male mice only (see manuscript
@@ -21,17 +21,18 @@ Methods for rationale).
 | `Fig2_Pancreas/` | Fasting blood glucose, fasting C-peptide, FCP/FBG ratio, pancreatic beta-cell/glucose-handling/T2D-susceptibility RT-qPCR gene expression, pancreas gene-pair correlation matrix |
 | `Fig3_Immune/` | 40-plex serum cytokine array (raw + log2, hierarchical clustering), serum blood chemistry (validated against Otto et al. 2016 reference ranges), splenic RT-qPCR gene expression, spleen gene-pair correlation matrix |
 | `Fig4_Organs/` | Hepatic and renal RT-qPCR gene expression, liver and kidney gene-pair correlation matrices |
-| `Fig5_InterOrgan/` | Inter-organ (cross-tissue) gene-pair correlation analysis — see note below |
-| `Supplementary/` | Blood chemistry validation detail (Supplementary Fig. 1) and an independent pancreas gene-panel correlation check (Supplementary Fig. 2) |
+| `Fig5_InterOrgan/` | Inter-organ (cross-tissue) gene-pair correlation analysis, see note below |
+| `Supplementary/` | Blood chemistry validation detail (Supplementary Fig. 1) |
 
-## Fig5_InterOrgan — two related analyses
+## Fig5_InterOrgan: two related analyses
 
 - `MetabolicImmune_Axis_Correlation_Results.csv` / `_Significant_Correlations.csv` /
-  `MetabolicImmune_Axis_Correlation_Analysis.r` — the full pairwise correlation sweep across
+  `MetabolicImmune_Axis_Correlation_Analysis.r`: the full pairwise correlation sweep across
   all RT-qPCR genes measured in each organ (1,210 gene-pair tests across the 5 organs), pooled
-  across all three groups. This is the source analysis behind the published Fig. 5 panels.
+  across all three groups. This is the source analysis behind the published Fig. 5 panels
+  (a, b, c and d).
 - `Rebuttal_Pooled_InterOrgan_Correlations_BHcorrected.csv` /
-  `Rebuttal_Stratified_InterOrgan_Correlations_PerGroup.csv` — a curated reanalysis restricted
+  `Rebuttal_Stratified_InterOrgan_Correlations_PerGroup.csv`: a curated reanalysis restricted
   to the specific gene panel discussed in the main text per organ (287 gene-pair tests),
   adding Benjamini–Hochberg correction across all tests and a within-group-stratified
   correlation pass. Produced during peer review in response to reviewer comments on multiple
@@ -57,7 +58,7 @@ Methods for rationale).
 Each `.r` script expects to be run with its own folder as the working directory (open it in
 RStudio and use *Session > Set Working Directory > To Source File Location*, or run
 `setwd()` yourself before sourcing). All file paths inside each script are relative to that
-folder — no personal or machine-specific paths are used in this repository.
+folder; no personal or machine-specific paths are used in this repository.
 
 ## Gene abbreviations
 
