@@ -1,0 +1,7 @@
+Term,Coefficient,SE,z,p,Singular_fit
+(Intercept),0.231,0.065,3.56,3.71e-4,TRUE
+GroupIL10-KO,0.141,0.092,1.54,0.124,TRUE
+GroupDSS-IL10-KO,0.25,0.092,2.73,0.00633,TRUE
+Week,0.065,0.009,7.35,1.98e-13,TRUE
+GroupIL10-KO:Week,-0.071,0.012,-5.7,1.2e-8,TRUE
+GroupDSS-IL10-KO:Week,-0.09,0.012,-7.23,4.83e-13,TRUE

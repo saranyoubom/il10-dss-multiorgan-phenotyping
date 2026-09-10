@@ -1,5 +1,5 @@
 # ============================================================
-# Supplementary Table S5 - Post-hoc effect sizes and
+# Supplementary Table 4 - Post-hoc effect sizes and
 # statistical power for representative group comparisons
 # Scientific Reports Rev1 rebuttal (Reviewer 2 points 1/3;
 # Reviewer 3 point 2)
@@ -13,10 +13,9 @@
 #   Achieved power is computed for a two-sample, two-tailed
 #   t-test at alpha = 0.05 using base R's power.t.test(), which
 #   implements the standard noncentral-t-distribution power
-#   calculation (equivalent to Python's
-#   statsmodels.stats.power.TTestIndPower used for the original
-#   rebuttal numbers, since R/Rscript was unavailable on the
-#   machine that produced them).
+#   calculation. Because Cohen's d is already expressed in
+#   pooled-SD units, power is obtained by passing delta = |d|
+#   with sd = 1.
 #
 # The four representative comparisons are read directly from
 # this project's own summary-statistics CSVs rather than
@@ -24,8 +23,8 @@
 # figures.
 #
 # Output:
-#   Supplementary_Table_S5_Effect_Sizes_Power.csv
-#   Supplementary_Table_S5_Minimum_Detectable_Effect.csv
+#   Supplementary_Table_4_Effect_Sizes_Power.csv
+#   Supplementary_Table_4_Minimum_Detectable_Effect.csv
 # ============================================================
 
 # 0) Clear workspace and set working directory
@@ -106,7 +105,7 @@ es_table <- do.call(rbind, lapply(comparisons, function(cmp) {
 
 cat("=== Effect sizes and achieved power ===\n")
 print(es_table)
-write_csv(es_table, "Supplementary_Table_S5_Effect_Sizes_Power.csv")
+write_csv(es_table, "Supplementary_Table_4_Effect_Sizes_Power.csv")
 
 # ============================================================
 # 4) Minimum detectable effect size at 80% power
@@ -120,11 +119,11 @@ mdes_table <- do.call(rbind, lapply(c(3, 4, 5), function(n) {
 
 cat("\n=== Minimum detectable effect size (80% power, alpha = 0.05, two-tailed) ===\n")
 print(mdes_table)
-write_csv(mdes_table, "Supplementary_Table_S5_Minimum_Detectable_Effect.csv")
+write_csv(mdes_table, "Supplementary_Table_4_Minimum_Detectable_Effect.csv")
 
 cat("\nSaved:\n")
-cat(" - Supplementary_Table_S5_Effect_Sizes_Power.csv\n")
-cat(" - Supplementary_Table_S5_Minimum_Detectable_Effect.csv\n")
+cat(" - Supplementary_Table_4_Effect_Sizes_Power.csv\n")
+cat(" - Supplementary_Table_4_Minimum_Detectable_Effect.csv\n")
 
 # ============================================================
 # END OF SCRIPT

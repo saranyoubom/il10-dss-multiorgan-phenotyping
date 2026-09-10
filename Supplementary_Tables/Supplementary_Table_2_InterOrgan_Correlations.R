@@ -1,5 +1,5 @@
 # ============================================================
-# Supplementary Table S3 - Benjamini-Hochberg-corrected and
+# Supplementary Table 2 - Benjamini-Hochberg-corrected and
 # group-stratified reanalysis of inter-organ gene expression
 # correlations
 # Scientific Reports Rev1 rebuttal (Reviewer 2 point 4 /
@@ -35,11 +35,6 @@
 #   logs) before the "within-animal" framing in the manuscript
 #   text is relied upon; the correlations themselves are
 #   correct as group-level associations regardless.
-#
-# Ported from the Python reanalysis used during peer review
-# (R/Rscript was unavailable on the machine that produced the
-# original rebuttal figures); reproduces the same procedure in
-# this project's usual R/tidyverse style.
 #
 # Output:
 #   Rebuttal_Pooled_InterOrgan_Correlations_BHcorrected.csv
@@ -154,6 +149,7 @@ pooled <- pairwise_corr(wide_pooled) %>%
   arrange(P_value) %>%
   mutate(
     rank        = row_number(),
+    BH_threshold = rank / n() * 0.05,
     p_adj_BH    = p.adjust(P_value, method = "BH"),
     Sig_raw     = P_value < 0.05,
     Sig_BH      = p_adj_BH < 0.05
@@ -202,13 +198,18 @@ cat(sprintf(
 
 # ============================================================
 # 4) Export
+#    Written back into Fig5_InterOrgan/, alongside the rest of
+#    that figure's source data, not into this script's own
+#    folder.
 # ============================================================
-write_csv(pooled, "Rebuttal_Pooled_InterOrgan_Correlations_BHcorrected.csv")
-write_csv(strat,  "Rebuttal_Stratified_InterOrgan_Correlations_PerGroup.csv")
+out_pooled <- "../Fig5_InterOrgan/Rebuttal_Pooled_InterOrgan_Correlations_BHcorrected.csv"
+out_strat  <- "../Fig5_InterOrgan/Rebuttal_Stratified_InterOrgan_Correlations_PerGroup.csv"
+write_csv(pooled, out_pooled)
+write_csv(strat,  out_strat)
 
 cat("\nSaved:\n")
-cat(" - Rebuttal_Pooled_InterOrgan_Correlations_BHcorrected.csv\n")
-cat(" - Rebuttal_Stratified_InterOrgan_Correlations_PerGroup.csv\n")
+cat(" -", out_pooled, "\n")
+cat(" -", out_strat, "\n")
 
 # ============================================================
 # END OF SCRIPT

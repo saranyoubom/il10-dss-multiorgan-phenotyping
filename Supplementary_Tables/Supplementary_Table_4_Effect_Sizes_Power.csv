@@ -1,0 +1,5 @@
+Comparison,Figure,n (group 1),n (group 2),Cohen's d,Achieved power
+"FCP/FBG ratio, CTRL vs IL10-KO",Fig. 2c,5,5,2.11,0.831
+"Albumin/globulin ratio, CTRL vs DSS-IL10-KO",Fig. 1d,3,3,7.45,>0.999
+"Splenic Tcf19 log2FC, CTRL vs DSS-IL10-KO",Fig. 3c,4,4,-2.46,0.823
+"Hepatic Zfand6 log2FC, CTRL vs DSS-IL10-KO",Fig. 4b,4,4,-4.45,>0.999

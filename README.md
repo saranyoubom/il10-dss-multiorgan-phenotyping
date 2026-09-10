@@ -22,8 +22,8 @@ Methods for rationale).
 | `Fig3_Immune/` | 40-plex serum cytokine array (raw + log2, hierarchical clustering), serum blood chemistry (validated against Otto et al. 2016 reference ranges), splenic RT-qPCR gene expression, spleen gene-pair correlation matrix |
 | `Fig4_Organs/` | Hepatic and renal RT-qPCR gene expression, liver and kidney gene-pair correlation matrices |
 | `Fig5_InterOrgan/` | Inter-organ (cross-tissue) gene-pair correlation analysis, see note below |
-| `Supplementary/` | Blood chemistry validation detail (Supplementary Fig. 1) |
-| `Supplementary_Tables/` | R scripts and outputs for Supplementary Tables S3-S5, added during peer review; see note below |
+| `Supplementary/` | Blood chemistry validation detail (Supplementary Fig. 1); RT-qPCR amplification curve data for pancreatic Ins1/Ins2 (Supplementary Fig. 2), added during peer review |
+| `Supplementary_Tables/` | R scripts and outputs for Supplementary Tables 2-4, added during peer review; see note below |
 
 ## Fig5_InterOrgan: two related analyses
 
@@ -37,32 +37,36 @@ Methods for rationale).
   to the specific gene panel discussed in the main text per organ (287 gene-pair tests),
   adding Benjamini–Hochberg correction across all tests and a within-group-stratified
   correlation pass. Produced during peer review in response to reviewer comments on multiple
-  testing and pooled-vs-within-group correlation structure; reported in Supplementary Table S3.
+  testing and pooled-vs-within-group correlation structure; reported in Supplementary Table 2.
 
-## Supplementary_Tables: reviewer-requested reanalyses (S3-S5)
+## Supplementary_Tables: reviewer-requested reanalyses (Tables 2-4)
 
 Three analyses added in response to peer review, each producing one of Supplementary
-Tables S3-S5 reported in the manuscript:
+Tables 2-4 reported in the manuscript:
 
-- `Supplementary_Table_S3_InterOrgan_Correlations.R`: Benjamini-Hochberg correction and
+- `Supplementary_Table_2_InterOrgan_Correlations.R`: Benjamini-Hochberg correction and
   group-stratified reanalysis of the inter-organ correlations in `Fig5_InterOrgan/`.
   Writes its output back into `Fig5_InterOrgan/` (the `Rebuttal_*.csv` files described
   above) to match where the source data lives.
-- `Supplementary_Table_S4_Mixed_Effects_Models.R`: linear mixed-effects models (random
+- `Supplementary_Table_3_Mixed_Effects_Models.R`: linear mixed-effects models (random
   intercept per animal) for body weight, fasting C-peptide and fasting blood glucose,
   complementing the paired t-tests reported in the main text.
-- `Supplementary_Table_S5_Effect_Sizes_Power.R`: Cohen's d and post-hoc statistical power
+- `Supplementary_Table_4_Effect_Sizes_Power.R`: Cohen's d and post-hoc statistical power
   for representative group comparisons, plus the minimum effect size detectable at 80%
   power given this study's sample sizes.
 
-These three scripts were written directly in R to match the rest of this deposit, but
-could not be executed or verified on the machine that produced them (R/Rscript was not
-available there; the original reanalysis was run in Python and the R port was checked by
-hand against those results). Please run them once and confirm the output before treating
-the CSVs as final. S4 in particular reconstructs, by exhaustive search against this
-project's own summary-statistics CSVs, which 5 of the available animals per group make up
-the cohort reported throughout the manuscript; this cohort identification should be
-independently confirmed against original laboratory records.
+These three scripts were written directly in R to match the rest of this deposit. All
+three have been executed (R 4.4.0) and their output verified to reproduce the exact
+statistics reported in the manuscript: 287 inter-organ tests with 7 surviving
+Benjamini-Hochberg correction (Table 2); C-peptide mixed-effects slopes of
++0.065/-0.071/-0.090 ng/mL/week for CTRL/IL10-KO/DSS-IL10-KO respectively (Table 3);
+and effect sizes/power matching those cited in the Discussion, e.g. Cohen's d = 2.11
+for the FCP/FBG ratio and d = -4.45 for hepatic Zfand6 (Table 4). Table 3 in particular
+reconstructs, by exhaustive search against this project's own summary-statistics CSVs,
+which 5 of the available animals per group make up the cohort reported throughout the
+manuscript; the reconstructed cohort has been verified against those summary statistics
+but should still be cross-checked against original laboratory records if the underlying
+data changes.
 
 ## File naming conventions
 

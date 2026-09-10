@@ -34,17 +34,37 @@ diabetologia_colors <- c(
 )
 
 # 3) Read the FCP and FBG data
+# NOTE (data-integrity fix): FBG is read from Fig_2a_Data_FBG.csv,
+# NOT from this file's own FBG column. Fig_2bc_Data_C_peptide_FBG.csv's
+# FBG column was found to be misaligned against animal identity -
+# traced to an original data-entry error inherited from
+# Experiments/HOMA/R/HOMA_data.csv, which predates this manuscript.
+# CTRL was unaffected; all IL10-KO and DSS-IL10-KO FBG values in that
+# column were wrong. Fig_2a_Data_FBG.csv is independently confirmed
+# correct (it reproduces the published Fig_2a_Summary_FBG.csv exactly)
+# and is joined here by Group + Replicate. This assumes Replicate
+# numbering is a stable per-animal label shared across measurement
+# types within a group, which is not independently verifiable for
+# C_peptide (no ID-tagged C-peptide file exists) but is the standard
+# assumption for a replicate/animal identifier and should be
+# confirmed against original laboratory records.
 cat("\n=== LOADING FASTING C-PEPTIDE (FCP) AND FBG DATA ===\n")
-dat <- read_csv("Fig_2bc_Data_C_peptide_FBG.csv")
-dat <- dat %>% filter(Replicate %in% c("Rep1", "Rep2", "Rep3", "Rep4", "Rep5"))
 
-# Rename C_peptide to FCP for clarity
-dat <- dat %>% rename(FCP = C_peptide)
+cpep <- read_csv("Fig_2bc_Data_C_peptide_FBG.csv") %>%
+  filter(Replicate %in% c("Rep1", "Rep2", "Rep3", "Rep4", "Rep5"),
+         Week_num == 12) %>%
+  select(Group, Replicate, FCP = C_peptide)
+
+fbg_correct <- read_csv("Fig_2a_Data_FBG.csv") %>%
+  filter(Week_num == 12) %>%
+  select(Group, Replicate, FBG)
+
+dat <- inner_join(cpep, fbg_correct, by = c("Group", "Replicate"))
 
 cat("\nData structure:\n")
 print(head(dat, 10))
-cat("\nWeeks available:", unique(dat$Week_num), "\n")
-cat("Groups:", unique(dat$Group), "\n")
+cat("\nGroups:", unique(dat$Group), "\n")
+cat("Rows after joining FCP (Week 12) to corrected FBG (Week 12):", nrow(dat), "\n")
 
 # ============================================================
 # 4) Calculate FCP/FBG Ratio at Week 12
@@ -52,7 +72,6 @@ cat("Groups:", unique(dat$Group), "\n")
 cat("\n=== CALCULATING FCP/FBG RATIO AT WEEK 12 ===\n")
 
 ratio_data <- dat %>%
-  filter(Week_num == 12) %>%
   filter(!is.na(FCP) & !is.na(FBG) & FBG != 0) %>%
   mutate(
     FCP_FBG_Ratio = FCP / FBG,

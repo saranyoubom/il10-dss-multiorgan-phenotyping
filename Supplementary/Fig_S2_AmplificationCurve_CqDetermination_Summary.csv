@@ -1,0 +1,7 @@
+Group,Gene,Cq_Determined,Total
+CTRL,Ins1,2,4
+IL10-KO,Ins1,0,4
+DSS-IL10-KO,Ins1,3,4
+CTRL,Ins2,4,4
+IL10-KO,Ins2,4,4
+DSS-IL10-KO,Ins2,4,4

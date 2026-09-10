@@ -1,4 +1,4 @@
 "Variable","group1","group2","Test_Method","p","p.signif"
 "FCP_FBG_Ratio","CTRL","IL10-KO","wilcox.test",0.00794,"**"
 "FCP_FBG_Ratio","CTRL","DSS-IL10-KO","wilcox.test",0.00794,"**"
-"FCP_FBG_Ratio","IL10-KO","DSS-IL10-KO","wilcox.test",0.421,"ns"
+"FCP_FBG_Ratio","IL10-KO","DSS-IL10-KO","wilcox.test",0.0952,"ns"
