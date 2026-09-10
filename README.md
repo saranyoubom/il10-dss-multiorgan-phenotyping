@@ -107,8 +107,11 @@ Full statistical methods are described in the manuscript Methods section.
 
 ## Related manuscript
 
-Data Availability section of the manuscript points to this deposit's DOI. Raw histology images
-are available from the corresponding author on reasonable request (not included here).
+Data Availability section of the manuscript points to this deposit's DOI:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22689231.svg)](https://doi.org/10.5281/zenodo.22689231)
+
+Raw histology images are available from the corresponding author on reasonable request
+(not included here).
 
 ## License
 
